@@ -3,6 +3,8 @@ import Header from "./header";
 import Footer from "./footer";
 import Note from "./note";
 import CreateArea from "./createarea";
+import StockData from "./stockdata";
+
 
 function App() {
     const [notes, setNotes] = useState([]);
@@ -35,6 +37,7 @@ function App() {
                     onDelete={deleteNote}
                 />
             )}
+        <StockData />
         <Footer />
     </div>
 };
